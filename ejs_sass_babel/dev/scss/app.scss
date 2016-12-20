@@ -2,19 +2,19 @@
 // Foundation
 // ==========================================================================*/
 
-@import "foundation/reset";
-@import "foundation/base";
-@import "foundation/var";
+@import "foundation/_reset";
+@import "foundation/_base";
+@import "foundation/_var";
 
 
 /*// ==========================================================================
 // Layout
 // ==========================================================================*/
 
-@import "layout/header";
-@import "layout/footer";
-@import "layout/sidebar";
-@import "layout/main";
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_sidebar";
+@import "layout/_main";
 
 
 /*// ==========================================================================
@@ -25,8 +25,8 @@
 // Component
 // -----------------------------------------------------------------*/
 
-@import "object/component/modal";
-@import "object/component/btn";
+@import "object/component/_modal";
+@import "object/component/_btn";
 
 /*// -----------------------------------------------------------------
 // Project
@@ -38,4 +38,4 @@
 // Utility
 // -----------------------------------------------------------------*/
 
-@import "object/utility/util";
+@import "object/utility/_util";
