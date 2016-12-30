@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
-import ejs from 'gulp-ejs'
+import ejs from 'gulp-ejs';
+import htmlhint from 'gulp-htmlhint';
 import pleeease from 'gulp-pleeease';
 import sass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
@@ -24,6 +25,8 @@ gulp.task('ejs', () => {
   gulp.src(ejsPass)
     .pipe(plumber())
     .pipe(ejs('',{"ext": ".html"}))
+    .pipe(htmlhint())
+    .pipe(htmlhint.reporter())
     .pipe(gulp.dest('./dist/'));
 });
 
@@ -69,7 +72,7 @@ gulp.task('serve', () => {
 
 
 
-gulp.task('bs-reload', function (){
+gulp.task('bs-reload', () => {
     browserSync.reload();
 });
 
